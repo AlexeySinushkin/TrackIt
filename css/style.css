@@ -1,0 +1,32 @@
+body{
+    min-width: 320px;
+    font-size: 14px;
+    font-family: tahoma, arial, helvetica, sans-serif;
+    color:#43595F;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+a{
+    color:#43595F;
+    text-decoration: underline;
+}
+a:hover{
+    color:#43595F;
+    text-decoration: none;
+}
+
+.dark-style{
+    color:#FFFFFF;
+}
+
+.dark-style a{
+    background-color: #43595F;
+    color:#FEA355;
+    text-decoration-style: underline;
+}
+.dark-style a:hover{
+    color:#FEA355;
+    text-decoration-style: none;
+}
