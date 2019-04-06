@@ -30,3 +30,18 @@ a:hover{
     color:#FEA355;
     text-decoration-style: none;
 }
+
+
+header{
+    background-image:url(/images/rez_top.jpg); 
+    background-repeat:repeat-x; 
+    height:77px; 
+    background-position:right top;
+}
+
+.nav-item a{
+    background-image:url(/images/m1.jpg);
+    width:98px;
+    height:71px;
+    vertical-align: middle;
+}
