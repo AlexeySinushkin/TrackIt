@@ -82,19 +82,37 @@ header{
     min-height: 400px;
     border-top: white 2px solid;
 }
+
+.shadow-width{
+    width: 12px;
+    max-width: 12px;    
+    padding: 0 0;
+}
+
 .main-shadow{
     z-index: 1;
     top:-71px;
     background-position: right top;
     background-repeat: no-repeat;
     background-image: url(/images/ch_center.jpg);
-    width: 12px;
-    max-width: 12px;
-    min-height: 324px;
-    padding: 0 0;
+    min-height: 324px;    
 }
 
 
+footer .row{
+    height:50px;
+    min-height: 50px;
+}
+footer .col{
+    text-align: center;
+}
+
+footer .footer-left{
+    border-top: solid 1px white;
+}
+footer .footer-right{
+    border-top: solid 1px #43595F;
+}
 
 .main-right{
     
