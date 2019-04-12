@@ -19,10 +19,11 @@ a:hover{
 
 .dark-style{
     color:#FFFFFF;
+    background-color: #43595F;
 }
 
 .dark-style a{
-    background-color: #43595F;
+    
     color:#FEA355;
     text-decoration-style: underline;
 }
@@ -44,4 +45,57 @@ header{
     width:98px;
     height:71px;
     vertical-align: middle;
+}
+
+
+
+.truck{
+    min-height: 282px;
+    background-color: yellow;
+}
+.truck-main{
+    background-image:url(/images/big_foto.jpg); 
+    background-repeat: no-repeat;
+    background-position: left top;
+    min-width: 766px;
+    width:766px;
+}
+.truck-left{
+    background-image:url(/images/rez_top1.jpg); 
+    background-repeat: repeat-x;
+    background-position: left top;
+}
+
+.truck-right{
+    background-image:url(/images/rez_top2.jpg); 
+    background-repeat: repeat-x;
+    background-position: left top;
+}
+
+.main-content{
+    min-height: 400px;
+}
+
+.main-left{
+    z-index: 1;
+    top:-71px;
+    min-height: 400px;
+    border-top: white 2px solid;
+}
+.main-shadow{
+    z-index: 1;
+    top:-71px;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-image: url(/images/ch_center.jpg);
+    width: 12px;
+    max-width: 12px;
+    min-height: 324px;
+    padding: 0 0;
+}
+
+
+
+.main-right{
+    
 }
