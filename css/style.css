@@ -4,6 +4,10 @@ body{
     font-family: tahoma, arial, helvetica, sans-serif;
     color:#43595F;
 }
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
 img{
     max-width: 100%;
     height: auto;
@@ -64,7 +68,6 @@ a:hover{
 
 
 
-
 .btn-outline-primary, 
 .btn-outline-primary:hover, 
 .btn-outline-primary:active, 
@@ -87,20 +90,35 @@ a:hover{
 .truck-main{
     background-image:url(/images/big_foto.jpg); 
     background-repeat: no-repeat;
-    background-position: left top;
-    min-width: 766px;
+    background-position: right top;
+    min-width:320px;
     width:766px;
 }
 .truck-left{
     background-image:url(/images/rez_top1.jpg); 
     background-repeat: repeat-x;
     background-position: left top;
+    display:none;
 }
 
 .truck-right{
     background-image:url(/images/rez_top2.jpg); 
     background-repeat: repeat-x;
     background-position: left top;
+    display:none;
+}
+
+
+@media (min-width: 768px)  {
+    .truck-left{
+        display:block;
+    }
+    .truck-right{
+        display:block;
+    }
+    .truck-main{
+        min-width:766px;
+    }
 }
 
 .main-content{
@@ -121,6 +139,7 @@ a:hover{
     width: 12px;
     max-width: 12px;    
     padding: 0 0;
+    display:none;
 }
 
 .main-shadow{
@@ -129,7 +148,13 @@ a:hover{
     background-position: right top;
     background-repeat: no-repeat;
     background-image: url(/images/ch_center.jpg);
-    min-height: 324px;    
+    min-height: 324px;   
+}
+
+@media (min-width: 600px)  {
+    .shadow-width{
+        display:block;
+    }
 }
 
 
