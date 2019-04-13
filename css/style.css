@@ -40,12 +40,19 @@ header{
     background-position:right top;
 }
 
-.nav-item a{
-    background-image:url(/images/m1.jpg);
-    width:98px;
-    height:71px;
-    vertical-align: middle;
+.nav-item{
+    background-image:url(/images/m.jpg);
+    background-repeat:no-repeat;
+    background-position: left top;
+    height:71px;    
 }
+.nav-link{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+
 .btn-outline-primary, 
 .btn-outline-primary:hover, 
 .btn-outline-primary:active, 
