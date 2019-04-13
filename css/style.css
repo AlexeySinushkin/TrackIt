@@ -46,6 +46,18 @@ header{
     height:71px;
     vertical-align: middle;
 }
+.btn-outline-primary, 
+.btn-outline-primary:hover, 
+.btn-outline-primary:active, 
+.btn-outline-primary:visited {
+    color: #43595F !important;
+    border-color: #43595F !important;
+}
+.btn-outline-primary:hover{
+    color: white !important;
+    border-color: white!important;
+    background-color: #FC7500 !important;
+}
 
 
 
@@ -82,7 +94,9 @@ header{
     min-height: 400px;
     border-top: white 2px solid;
 }
-
+.main-right{
+    
+}
 .shadow-width{
     width: 12px;
     max-width: 12px;    
@@ -114,6 +128,3 @@ footer .footer-right{
     border-top: solid 1px #43595F;
 }
 
-.main-right{
-    
-}
