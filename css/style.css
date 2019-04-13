@@ -12,6 +12,10 @@ a{
     color:#43595F;
     text-decoration: underline;
 }
+p{
+    text-indent: 1rem;
+    margin: 4px auto;
+}
 a:hover{
     color:#43595F;
     text-decoration: none;
@@ -31,26 +35,34 @@ a:hover{
     color:#FEA355;
     text-decoration-style: none;
 }
-
-
-header{
-    background-image:url(/images/rez_top.jpg); 
-    background-repeat:repeat-x; 
-    height:77px; 
-    background-position:right top;
+.input-imei{
+    width:160px;
 }
 
-.nav-item{
-    background-image:url(/images/m.jpg);
-    background-repeat:no-repeat;
-    background-position: left top;
-    height:71px;    
+
+
+@media (min-width: 992px)  {
+    header{
+        background-image:url(/images/rez_top.jpg); 
+        background-repeat:repeat-x; 
+        height:77px; 
+        background-position:right top;
+    }
+
+    .nav-item{
+        background-image:url(/images/m.jpg);
+        background-repeat:no-repeat;
+        background-position: left -7px;
+        height:71px;    
+    }
+    .nav-link{
+        margin-left: 10px;
+        margin-right: 10px;
+        text-transform: uppercase;
+    }
 }
-.nav-link{
-    margin-left: 10px;
-    margin-right: 10px;
-    text-transform: uppercase;
-}
+
+
 
 
 .btn-outline-primary, 
@@ -100,6 +112,7 @@ header{
     top:-71px;
     min-height: 400px;
     border-top: white 2px solid;
+    padding-top:1rem;
 }
 .main-right{
     
