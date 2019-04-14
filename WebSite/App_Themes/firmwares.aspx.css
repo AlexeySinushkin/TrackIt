@@ -1,0 +1,29 @@
+
+.firmwares-table
+{
+	width:300px;
+	margin: 0 auto;
+}
+
+#newf
+{
+	height:150px;
+}
+#newf .form dd
+{
+	width:100px;
+}
+#newf .form dt
+{
+	width:200px;
+}
+
+#flashf .form dd
+{
+	width:100px;
+}
+#flashf .form dt
+{
+	width:200px;
+}
+

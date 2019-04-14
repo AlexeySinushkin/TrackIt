@@ -1,0 +1,18 @@
+.profile1, .profile2
+{
+	height:200px;
+	overflow:visible;
+	width:360px;
+	margin:6px 0;
+}
+.image-uploader
+{
+	width:380px;
+	overflow:hidden;
+}
+
+.form dt.tbox .error
+{
+	position:absolute;
+	z-index:1;
+}

@@ -1,0 +1,11 @@
+dl.register
+{
+	width:380px;
+	float:left;
+	margin:6px 0;
+}
+.form dt.tbox .error
+{
+	position:absolute;
+	z-index:1;
+}

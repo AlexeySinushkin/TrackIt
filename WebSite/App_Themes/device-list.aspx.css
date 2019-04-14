@@ -1,0 +1,52 @@
+.main-info 
+{
+min-height:100px;	
+}
+
+.main-info dd
+{
+width:200px;	
+margin-left:0;
+}
+
+.devices-table
+{
+	margin:4px auto;
+}
+/*
+
+.xyz
+{
+	width:100px;	
+}
+.xyz dd
+{
+	margin-left:0;
+	width:30px;
+	clear:left;
+}
+.xyz dt.tbox
+{
+	width:60px;
+}
+.f2 dd
+{
+	margin-left:0;
+}
+.f2 dt.tbox
+{
+	width:89px;
+}
+.f2 dt.ddown
+{
+	width:90px;
+}
+.device-list
+{
+	height:200px;
+	overflow:scroll;
+	overflow:hidden;
+	overflow-y:auto;	
+}
+
+*/

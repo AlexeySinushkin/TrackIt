@@ -1,0 +1,42 @@
+#location_map
+{
+	height:300px;
+	position:relative;
+}
+
+.map-preload-title
+{
+	position:absolute;
+	left:70px;
+	width:200px;
+	z-index:1;
+	text-align:center;
+	padding:10px;
+	display:block;
+	background-color:#F0EEE6;
+	color:#43595F;
+	font-family:tahoma,arial,helvetica,sans-serif;
+	font-size:13px;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	line-height:16px;
+}
+.locations-container
+{
+	position:absolute;
+	top:-100px;
+	height:100px;
+	width:380px;
+	overflow:scroll;
+	overflow:hidden;
+	overflow-y:auto;	
+}
+.locations li
+{
+	list-style-type:none;
+}
+.dark a:hover
+{
+	cursor: pointer;
+}

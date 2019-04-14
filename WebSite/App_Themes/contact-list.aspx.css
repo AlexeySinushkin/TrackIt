@@ -1,0 +1,68 @@
+.users-list-filter
+{
+	height:120px;
+	overflow:visible;	
+}
+.filter1
+{
+	float:left;
+	width:160px;
+}
+.filter1 ul
+{
+	margin:0;
+	padding-left:1em;
+}
+.filter1 li
+{
+	list-style-type:none;	
+}
+.filter2
+{
+	float:right;
+	width:210px;	
+}
+.filter2 dd
+{
+	width:80px;
+	margin:0;
+	padding:0;
+}
+.filter2 dt
+{
+	width:120px;
+	margin:0;
+	padding-left:5px;
+}
+.filter-button
+{
+	float:right;
+	clear:both;
+}
+.users-list, .contact-list
+{
+	overflow: hidden; 
+	overflow-y:scroll;
+	width: 376px; 
+	height:300px;
+	border: 1px dotted #fea355;
+}
+.contact-list
+{
+	height:350px;	
+}
+.contact-list .classic_top_draggable
+{
+	cursor:default;	
+}
+.no-overflow-hide
+{
+	overflow:visible;
+}
+
+
+.ready-to-trash
+{
+	background-color:#f0eee6;
+	border-width:2px;
+}

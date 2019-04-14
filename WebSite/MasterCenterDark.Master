@@ -1,0 +1,224 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterCenterDark.Master.cs" Inherits="TrackIt.Website.MasterCenterDark" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title><asp:ContentPlaceHolder ID="title" runat="server"/></title>
+    <meta name="verify-v1" content="gN7GrPgQhQBoeMn1yjvomX2jc2eBOBXJIrL/BFH5aa0=" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="отслеживание, логистика, телеметрия, состояние груза, перевозка груза, перевозка, температура, влажность, GPS, ГЛОНАСС" /> 
+    <meta name="description" content="Служба отслеживания груза - климматическое состояние, географическое положешние, логистика" /> 
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <style type="text/css">
+    .slogan
+    {
+	    background-image: url(/images/<%=currentCulture.CultureName %>/caption.<%=pageName %>.gif);
+    }
+    </style>
+    
+    <% if (firstLoad)
+       { %>
+       <style type="text/css" >
+        <%=GetLightStyle() %>
+       </style>
+    <script language="javascript">
+        function addCss(fileName)
+        {
+            css = document.createElement('link');
+            css.setAttribute('rel', 'stylesheet');
+            css.setAttribute('type', 'text/css');
+            css.setAttribute('href', fileName);
+            document.getElementsByTagName('head')[0].appendChild(css);
+        } 
+        function addJs(src)
+        {
+            var js = document.createElement("script");
+            js.setAttribute("type","text/javascript");
+            js.setAttribute("src",src);
+            document.getElementById('temp_container').appendChild(js);
+        }
+        function addImg(src)
+        {
+            var img = new Image(1,1);
+            img.src=src;
+            document.getElementById('temp_container').appendChild(img);
+        }
+    </script>
+    <%}
+       else
+       { %>
+       
+        <link rel="Stylesheet" type="text/css" href="/App_Themes/style.css" />        
+        <script language="javascript">
+            function addCss(fileName)
+            {
+                css = document.createElement('link');
+                css.setAttribute('rel', 'stylesheet');
+                css.setAttribute('type', 'text/css');
+                css.setAttribute('href', fileName);
+                document.getElementsByTagName('head')[0].appendChild(css);
+            } 
+        </script>
+        <asp:ContentPlaceHolder ID="Stylesheets" runat="server"/>
+        <script type="text/javascript" src="/scripts/prototype.js"></script>  
+        <script type="text/javascript" src="/scripts/Menu.js"></script>      
+        <script type="text/javascript" src="/scripts/effects.js"></script>  
+        <script type="text/javascript" src="/scripts/dragdrop.js"></script>  
+        <script type="text/javascript" src="/scripts/Control.js"></script>      
+        <script type="text/javascript" src="/scripts/slider.js"></script> 
+        <script type="text/javascript" src="/scripts/cropper.js"></script>     
+        <script type="text/javascript" src="/scripts/common.js"></script>
+        <script type="text/javascript" src="/scripts/WebControl.js"></script>  
+        <script type="text/javascript" src="/scripts/ContainerWidget.js"></script>     
+        <script type="text/javascript" src="/scripts/Panel.js"></script>          
+        <script type="text/javascript" src="/scripts/DraggablePanel.js"></script>          
+        <script type="text/javascript" src="/scripts/controls.js"></script>
+        <script type="text/javascript" src="/scripts/builder.js"></script>
+        <script type="text/javascript" src="/scripts/Skinnable.js"></script> 
+        <script type="text/javascript" src="/scripts/TextBox.js"></script>
+        <script type="text/javascript" src="/scripts/Window.js"></script> 
+        <script type="text/javascript" src="/scripts/<%=currentCulture.CultureName %>/DateTimePicker.js"></script> 
+        <script type="text/javascript" src="/scripts/AutoCompleter.js"></script>
+       
+          
+        
+    <% }%>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body onload="pageLoaded();">
+    <% if (!firstLoad)
+       { %>
+       <script language="javascript">
+            addCss("/App_Themes/<%=pageName %>.css");
+       </script>
+       <%} %>
+<div id="temp_container" style="display:none;" ></div>
+
+
+<div class="middle">
+    <div class="left">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td class="left-rez">
+                &nbsp;<!--IE-->
+                </td>
+                <td valign="top" class="left-content">
+                    <div class="slogan">
+                    </div>
+                    <div class="slogan-info">
+                        <asp:ContentPlaceHolder ID="preface" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="right">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td id="trailer_foto" class="right-content">                
+                </td>
+                <td class="right-rez">
+                &nbsp;<!--IE-->
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="sm" runat="server" EnablePartialRendering="true" ScriptMode="Release" EnableScriptGlobalization="true"
+    EnableScriptLocalization="true" EnablePageMethods="true">
+    </asp:ScriptManager>
+
+
+<div class="bottom-center dark" id="bottom">
+    <div class="shadow">
+        <div class="container">
+            <div class="content">
+             <asp:ContentPlaceHolder ID="bc" runat="server"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer-container">
+<table class="footer" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td>
+            <div class="left dark">
+                <%DateTime.Now.Year.ToString();%>
+                &copy; Алексей Синюшкин
+            </div>
+        </td>
+        <td>
+            <div class="right dark">
+                        <asp:UpdatePanel runat="server" UpdateMode="Always"><ContentTemplate>
+            Время выполнения: <%=GetMilliseconds()%> мс.
+            </ContentTemplate></asp:UpdatePanel>
+            </div>
+        </td>
+        <td><div style="width:12px"></div></td>        
+    </tr>
+</table>
+</div>
+</form>
+
+<div style="position:absolute;z-index:1;margin-bottom:20px;left:40%;" id="please_wait"><%=cm.Get("index$PleaseWait","Пожалуйста дождитесь полной загрузки страницы.")%></div>
+
+<script type="text/javascript">
+    function pageLoaded()
+    {    
+        $("please_wait").hide();
+    }
+</script>
+
+<% if (firstLoad)
+   { %>
+    <script type="text/javascript">
+        addCss('/App_Themes/style.css');
+    </script>
+    <script type="text/javascript" src="/scripts/prototype.js"></script>    
+    <script type="text/javascript" src="/scripts/Menu.js"></script>    
+    <script type="text/javascript" src="/scripts/effects.js"></script>      
+    <script type="text/javascript">
+        addCss('/App_Themes/<%=pageName %>.css');
+    </script>    
+<%} %>
+
+<asp:ContentPlaceHolder ID="scripts" runat="server"/>
+
+<% if (firstLoad)
+   { %>
+        <script type="text/javascript" src="/scripts/dragdrop.js"></script>  
+        <script type="text/javascript" src="/scripts/Control.js"></script>      
+        <script type="text/javascript" src="/scripts/slider.js"></script> 
+        <script type="text/javascript" src="/scripts/cropper.js"></script>     
+        <script type="text/javascript" src="/scripts/common.js"></script>
+        <script type="text/javascript" src="/scripts/WebControl.js"></script>  
+        <script type="text/javascript" src="/scripts/ContainerWidget.js"></script>     
+        <script type="text/javascript" src="/scripts/Panel.js"></script>          
+        <script type="text/javascript" src="/scripts/DraggablePanel.js"></script>          
+        <script type="text/javascript" src="/scripts/controls.js"></script>
+        <script type="text/javascript" src="/scripts/builder.js"></script>
+        <script type="text/javascript" src="/scripts/Skinnable.js"></script> 
+        <script type="text/javascript" src="/scripts/TextBox.js"></script>
+        <script type="text/javascript" src="/scripts/Window.js"></script> 
+        <script type="text/javascript" src="/scripts/ru-RU/DateTimePicker.js"></script> 
+        <script type="text/javascript" src="/scripts/AutoCompleter.js"></script>   
+<%} %>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8146792-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+</body>
+</html>

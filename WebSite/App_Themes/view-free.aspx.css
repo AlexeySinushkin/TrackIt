@@ -1,0 +1,124 @@
+﻿.map_wrap
+{ 
+    height: 600px; 
+    width:370px;
+}
+.slogan-info {
+    color:#2c3c40;
+    font-weight:800;
+}
+.map-preload-title
+{
+	position:absolute;
+	left:100px;
+	width:200px;
+	z-index:1;
+	text-align:center;
+	padding:10px;
+	display:block;
+}
+.map_description
+{
+	width:350px;
+	float:right;
+}
+
+.gps-table-container
+{
+	height:580px;
+	overflow:scroll;
+	overflow:hidden;
+	overflow-y:auto;
+	position:relative;
+}
+.gps-table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-style: solid;
+    border-width: 1px;
+    width:370px;
+    margin: 0 auto;
+}
+.gps-table td.ts, .gps-table th.ts
+{
+    display:none;    
+}
+.gps-table tbody tr td
+{
+	padding-left:4px;
+    border-style:solid;
+	border-width:1px;	
+}
+.gps-table td.done
+{
+	font-weight:bold;	
+}
+.gps-pager
+{
+	width:100%;
+	text-align:center;	
+}
+.gps-pager a
+{
+	text-decoration:none;
+	font-weight:bold;
+	margin:2px;	
+	padding:1px 4px;
+	white-space:normal;
+	border:solid 1px #43595F;
+	display:inline-block;
+}
+
+
+.gps-paging-type
+{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.gps-calculator
+{
+	position:absolute;
+	z-index:1;
+	border-width:0px;
+	padding:0;
+	margin:0;
+}
+.gps-calculator .up
+{
+	width:14px;
+	height:14px;
+	background-image:url(/images/gpsCalculator_up.gif);
+	background-repeat:no-repeat;
+}
+.gps-calculator .down
+{
+	width:14px;
+	height:14px;
+	background-image:url(/images/gpsCalculator_down.gif);
+	background-repeat:no-repeat;	
+}
+.gps-calculator .gps-calc-body
+{
+	background-image:url(/images/gpsCalculator_body.gif);
+	background-repeat:repeat-y;	
+	background-position:center;
+	vertical-align:middle;
+}
+.gps-calculator .gps-calc-body .FFBug
+{
+	position:relative;	
+}
+
+
+.gps-calculator .gps-calc-body div.info
+{
+	position:absolute;/*чтобы не растягивать стрелку*/
+	background-color:White;
+	padding:10px;
+	z-index:1;
+	left:-220px;
+	top:-10px;
+	width:200px;	
+}

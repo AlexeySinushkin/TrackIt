@@ -1,0 +1,187 @@
+/*Основные стили для элементов окон*/
+/*Tracking*/
+
+.track-step
+{
+	width:100%;
+	clear:both;
+	margin-bottom:10px;
+}
+.track-step h4
+{
+	margin:4px auto;
+}
+.track-step .map, .track-step .ranger
+{
+	margin-right:10px;
+}
+.map
+{
+	width:400px;
+	height:282px;
+	min-height:282px;
+	float:left;
+}
+.map-preload-title
+{
+	position:absolute;
+	left:100px;
+	width:200px;
+	z-index:1;
+	text-align:center;
+	padding:10px;
+	display:block;
+}
+.track-step .route-points
+{
+	margin:4px auto;
+	clear:both;
+}
+.point-create
+{
+	padding:10px;
+	height:220px;
+}
+.point-create .left
+{
+	float:left;
+}
+.point-create .right
+{
+	height:130px;	
+	width:80px;	
+	display:block;
+	overflow:hidden;
+	overflow-y:auto;
+
+}
+.point-create .right ul
+{
+	list-style-type:none; 
+	margin:0; 
+	padding:0;
+}
+
+.point-create .left .add-point
+{
+	width:240px;
+}
+.point-create .left .add-point dd
+{
+	width:110px;
+	margin-left:6px;
+	height:2em;
+	vertical-align:baseline;
+	padding:0;
+	margin:0;
+}
+.point-create .left .add-point dt
+{
+	float:right;
+	height:2em;
+	padding:0;	
+	margin:0;
+	width:120px;
+}
+
+.ranger
+{
+	float:left;
+	width:380px;
+	height:40px;
+	padding:10px;
+}
+.ranger .track 
+{
+	background-repeat:no-repeat;
+	background-image:url("/images/graduation.jpg");
+	position: relative;
+	height:20px;	
+	width: 360px;
+	cursor: pointer; 
+	z-index: 1;
+}
+.ranger .handle {
+  background-image:url("/images/thumb.gif");
+  background-repeat:no-repeat;
+  cursor: move; z-index: 2;
+}
+.ranger .value
+{
+	text-align:center;
+	margin-top:10px;
+}
+.ranger input
+{
+	width:40px;
+}
+.map-preload-title
+{
+	color: #43595f;
+	background-color:#f0eee6;
+	font: 13px/16px tahoma, arial, helvetica, sans-serif;
+	font-weight:bold;
+}
+.track-notify
+{
+	display:block;
+	float:left;
+}
+.track-notify input
+{
+	border:0px;	
+	margin:0;
+	padding:0;
+}
+.track-step .list
+{
+	height:160px;
+	width:340px;		
+	display:block;
+	overflow:hidden;
+	overflow-y:auto;
+}
+.track-step .companies
+{
+	float:left;
+	width:400px;
+	margin-right:10px;
+}
+.track-step .realties
+{
+	float:right;
+}
+
+.track-step .list .item
+{
+	margin: 4px 0;
+	cursor: hand;
+	clear: both;	
+	float: none;
+	display: block;
+}
+
+.track-step .list .item img.logo
+{
+	width:40px;
+	float:left;
+	margin-right:10px;
+}
+.track-step .list .item h4
+{
+	margin:4px auto;
+}
+
+.ranger .graduation
+{
+	background-image:url(/images/graduation.jpg); 
+}
+.ranger .scroller
+{
+	background-image:url(/images/thumb.gif); 
+}
+
+.infoWindow
+{
+	color: #43595f;	
+}

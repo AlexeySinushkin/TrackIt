@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>www.track-it.ru</title>
+        <script type="text/javascript" src="scripts/prototype.js"></script>    
+    <script type="text/javascript" src="scripts/effects.js"></script>  
+    <script type="text/javascript" src="/scripts/dragdrop.js"></script>  
+    <script type="text/javascript" src="/scripts/common.js"></script>
+    <script type="text/javascript" src="/scripts/Control.js"></script>   
+    <script type="text/javascript" src="/scripts/WebControl.js"></script>  
+    <script type="text/javascript" src="/scripts/ContainerWidget.js"></script>     
+    <script type="text/javascript" src="/scripts/Panel.js"></script>          
+    <script type="text/javascript" src="/scripts/DraggablePanel.js"></script>          
+    <script type="text/javascript" src="/scripts/controls.js"></script>
+    <script type="text/javascript" src="/scripts/builder.js"></script>
+    <script type="text/javascript" src="/scripts/Skinnable.js"></script> 
+    <script type="text/javascript" src="/scripts/TextBox.js"></script>
+    <script type="text/javascript" src="/scripts/Window.js"></script> 
+    <style type="text/css">
+        #content
+        {
+            height: 140px;
+            width: 360px;
+        }
+        #script
+        {
+            height: 140px;
+            width: 360px;
+        }
+    </style>
+</head>
+<body>
+<script type="text/javascript">
+function foo()
+{
+var text=$('content').value;
+var script=$('script').value;
+$('container').update(text);
+eval(script);
+}
+function foo2()
+{
+$('d4e3_8346_oldPoints').descendants('a').each( function(item, index)
+{
+	var s=item.innerHTML.strip();
+	s.scan(/(\{[^`]*\})/, function(match)
+		{
+		 var a=eval('('+match[0]+')');
+		 var b=a;
+		}
+	);
+}
+);
+}
+</script>
+<textarea id="content"></textarea>
+<textarea id="script"></textarea>
+<input type="button" value="Ok" onclick="foo();"/>
+<input type="button" value="OK2" onclick="foo2();"/>
+<div id="container"></div>
+<ul id="d4e3_8346_oldPoints">
+    
+         <li>
+         <a href="#" onclick="fillPoint('d4e3_8346',{latitude:0.572958,
+         longitude:4.606982,description:'Test1'}); return false;">Test1</a>
+         </li>
+        
+         <li>
+         <a href="#" onclick="fillPoint('d4e3_8346',{latitude:3.126178,
+         longitude:4.611398,description:'Test2'}); return false;">Test2</a>
+         </li>
+        
+         <li>
+         <a href="#" onclick="fillPoint('d4e3_8346',{latitude:5.807571,
+         longitude:6.050366,description:'Realty of Test Company'}); return false;">Realty of Test Company</a>
+         </li>
+</ul>
+
+</body>
+</html>

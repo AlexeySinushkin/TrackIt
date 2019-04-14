@@ -1,0 +1,23 @@
+
+
+
+.tracks-table
+{
+	margin:4px auto;
+}
+.srt
+{
+	width:380px;
+	float:right;
+}
+.slt
+{
+width:370px;
+float:left;
+text-align:right;
+margin-bottom:10px;
+padding-bottom:10px; 
+padding-right:10px; 
+border-right:dotted 2px #fea355;
+border-bottom:dotted 2px #fea355;	
+}

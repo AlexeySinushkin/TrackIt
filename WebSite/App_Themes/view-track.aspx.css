@@ -1,0 +1,463 @@
+
+.ranger
+{
+	width:700px;
+	height:40px;
+	padding:10px 0;
+	margin:4px auto;
+	position:relative;/*for offset*/
+}
+.ranger .track 
+{
+	background-repeat:no-repeat;
+	background-image:url("/images/track_700.jpg");
+	position: relative;
+	height:4px;	
+	margin-bottom:10px;
+	cursor: pointer; 
+	z-index: 1;
+}
+.ranger .handle {
+  background-image:url("/images/thumb.gif");
+  background-repeat:no-repeat;
+  height: 15px; 
+  width: 5px; 
+  top: -0.25em;
+  cursor: move; z-index: 2;
+}
+.ranger .value
+{
+	text-align:center;
+}
+.ranger .rainbow
+{
+	height:4px;
+	margin-bottom:4px;	
+	border-collapse:collapse;
+	position:absolute;
+	top:10px;
+	z-index:1;
+}
+.ranger .rainbow .c1, .c1
+{
+	background-color:#dc9caa;
+}
+.ranger .rainbow .c2, .c2
+{
+	background-color:#f29d76;
+}
+.ranger .rainbow .c3, .c3
+{
+	background-color:#efdc75;
+}
+.ranger .rainbow .c4, .c4
+{
+	background-color:#99ba8d;
+}
+.ranger .rainbow .c5, .c5
+{
+	background-color:#bfd1f5;
+}
+.ranger .rainbow .c6, .c6
+{
+	background-color:#82abe9;
+}
+.ranger .rainbow .c7, .c7
+{
+	background-color:#da8ac9;
+}
+.ranger input
+{
+	
+}
+.ranger .gauge
+{
+	width:100%;
+}
+.ranger .gauge .gfrom
+{
+	width:33%;
+	text-align:left;
+}
+.ranger .gauge .gmiddle
+{
+	width:33%;
+	text-align:center;
+}
+.ranger .gauge .gto
+{
+	width:33%;
+	text-align:right;
+}
+.general_info
+{
+	height:100px;
+}
+.general1, .general2
+{
+	margin-top:0px;
+	float:left;	
+}
+.general1 dd, general2 dd
+{
+	margin-left:10px;
+	overflow:hidden;
+}
+.general1 dt, .general2 dt
+{
+	overflow:hidden;
+	font-weight:bold;
+	white-space:nowrap;
+}
+.general1
+{
+	width:300px;
+}
+.general1 dt
+{
+	width:150px;	
+}
+.general2
+{
+	width:480px;	
+}
+.general2 dd
+{
+	margin-left:10px;	
+}
+.general2 dt
+{
+	width:330px;	
+}
+
+
+.imgCrop_wrap {
+	/* width: 500px;   @done_in_js */
+	/* height: 375px;  @done_in_js */
+	position: relative;
+	cursor: crosshair;
+}
+
+/* an extra classname is applied for Opera < 9.0 to fix it's lack of opacity support */
+.imgCrop_wrap.opera8 .imgCrop_overlay,
+.imgCrop_wrap.opera8 .imgCrop_clickArea { 
+	background-color: transparent;
+}
+
+/* fix for IE displaying all boxes at line-height by default, although they are still 1 pixel high until we combine them with the pointless span */
+.imgCrop_wrap,
+.imgCrop_wrap * {
+	font-size: 0;
+}
+
+.imgCrop_overlay {
+	background-color: #000;
+	opacity: 0.5;
+	filter:alpha(opacity=50);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.imgCrop_selArea {
+	position: absolute;
+	/* @done_in_js 
+	top: 20px;
+	left: 20px;
+	width: 200px;
+	height: 200px;
+	background: transparent url(castle.jpg) no-repeat  -210px -110px;
+	*/
+	cursor: move;
+	z-index: 2;
+}
+
+/* clickArea is all a fix for IE 5.5 & 6 to allow the user to click on the given area */
+.imgCrop_clickArea {
+	width: 100%;
+	height: 100%;
+	background-color: #FFF;
+	opacity: 0.01;
+	filter:alpha(opacity=01);
+}
+
+.imgCrop_marqueeHoriz {
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background: transparent url(/images/marqueeHoriz.gif) repeat-x 0 0;
+	z-index: 3;
+}
+
+.imgCrop_marqueeVert {
+	position: absolute;
+	height: 100%;
+	width: 1px;
+	background: transparent url(/images/marqueeVert.gif) repeat-y 0 0;
+	z-index: 3;
+}
+
+/* 
+ *  FIX MARCHING ANTS IN IE
+ *	As IE <6 tries to load background images we can uncomment the follwoing hack 
+ *  to remove that issue, not as pretty - but is anything in IE?
+ *  And yes I do know that 'filter' is evil, but it will make it look semi decent in IE
+ *
+* html .imgCrop_marqueeHoriz,
+* html .imgCrop_marqueeVert {
+	background: transparent;
+	filter: Invert; 
+}
+* html .imgCrop_marqueeNorth { border-top: 1px dashed #000; }
+* html .imgCrop_marqueeEast  { border-right: 1px dashed #000; }
+* html .imgCrop_marqueeSouth { border-bottom: 1px dashed #000; }
+* html .imgCrop_marqueeWest  { border-left: 1px dashed #000; }
+*/
+
+.imgCrop_marqueeNorth { top: 0; left: 0; }
+.imgCrop_marqueeEast  { top: 0; right: 0; }
+.imgCrop_marqueeSouth { bottom: 0px; left: 0; }
+.imgCrop_marqueeWest  { top: 0; left: 0; }
+
+
+.imgCrop_handle {
+	position: absolute;
+	border: 1px solid #333;
+	width: 6px;
+	height: 6px;
+	background: #FFF;
+	opacity: 0.5;
+	filter:alpha(opacity=50);
+	z-index: 4;
+}
+
+/* fix IE 5 box model */
+* html .imgCrop_handle {
+	width: 8px;
+	height: 8px;
+	wid\th: 6px;
+	hei\ght: 6px;
+}
+
+.imgCrop_handleN {
+	top: -3px;
+	left: 0;
+	/* margin-left: 49%;    @done_in_js */
+	cursor: n-resize;
+}
+
+.imgCrop_handleNE { 
+	top: -3px;
+	right: -3px;
+	cursor: ne-resize;
+}
+
+.imgCrop_handleE {
+	top: 0;
+	right: -3px;
+	/* margin-top: 49%;    @done_in_js */
+	cursor: e-resize;
+}
+
+.imgCrop_handleSE {
+	right: -3px;
+	bottom: -3px;
+	cursor: se-resize;
+}
+
+.imgCrop_handleS {
+	right: 0;
+	bottom: -3px;
+	/* margin-right: 49%; @done_in_js */
+	cursor: s-resize;
+}
+
+.imgCrop_handleSW {
+	left: -3px;
+	bottom: -3px;
+	cursor: sw-resize;
+}
+
+.imgCrop_handleW {
+	top: 0;
+	left: -3px;
+	/* margin-top: 49%;  @done_in_js */
+	cursor: w-resize;
+}
+
+.imgCrop_handleNW {
+	top: -3px;
+	left: -3px;
+	cursor: nw-resize;
+}
+
+/**
+ * Create an area to click & drag around on as the default browser behaviour is to let you drag the image 
+ */
+.imgCrop_dragArea {
+	width: 100%;
+	height: 100%;
+	z-index: 200;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.imgCrop_previewWrap {
+	/* width: 200px;  @done_in_js */
+	/* height: 200px; @done_in_js */
+	overflow: hidden;
+	position: relative;
+}
+
+.imgCrop_previewWrap img {
+	position: absolute;
+}
+
+
+.temperature
+{
+	height:300px;
+}
+.gg
+{
+	float:left;
+}
+.gg img, .zg img
+{
+	border-width:0px;	
+}
+.zg
+{
+	float:right;
+}
+
+ul.sensors
+{
+clear:both; 
+margin-left:10px;	
+}
+
+ul.sensors li
+{
+list-style-type:square;
+display:inline;	
+}
+ul.sensors li label
+{
+font-weight:bold; 
+text-decoration:underline;	
+}
+
+.map
+{
+	width:400px;
+	height:500px;
+	float:left;
+	padding-top:20px;
+}
+.map_wrap
+{
+	width:400px;
+	height:460px;
+}
+.map-preload-title
+{
+	position:absolute;
+	left:100px;
+	width:200px;
+	z-index:1;
+	text-align:center;
+	padding:10px;
+	display:block;
+}
+.map_description
+{
+	width:350px;
+	float:right;
+}
+
+.gps-table-container
+{
+	height:400px;
+	overflow:scroll;
+	overflow:hidden;
+	overflow-y:auto;
+	position:relative;
+}
+.gps-table
+{
+	
+}
+.gps-table td
+{
+	padding-left:4px;
+}
+.gps-table td.done
+{
+	font-weight:bold;	
+}
+.gps-pager
+{
+	width:100%;
+	text-align:center;	
+}
+.gps-pager a
+{
+	text-decoration:none;
+	font-weight:bold;
+	margin:2px;	
+	padding:1px 4px;
+	white-space:normal;
+	border:solid 1px #43595F;
+	display:inline-block;
+}
+.gps-paging-type
+{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.gps-calculator
+{
+	position:absolute;
+	z-index:1;
+	border-width:0px;
+	padding:0;
+	margin:0;
+}
+.gps-calculator .up
+{
+	width:14px;
+	height:14px;
+	background-image:url(/images/gpsCalculator_up.gif);
+	background-repeat:no-repeat;
+}
+.gps-calculator .down
+{
+	width:14px;
+	height:14px;
+	background-image:url(/images/gpsCalculator_down.gif);
+	background-repeat:no-repeat;	
+}
+.gps-calculator .gps-calc-body
+{
+	background-image:url(/images/gpsCalculator_body.gif);
+	background-repeat:repeat-y;	
+	background-position:center;
+	vertical-align:middle;
+}
+.gps-calculator .gps-calc-body .FFBug
+{
+	position:relative;	
+}
+.gps-calculator .gps-calc-body div.info
+{
+	position:absolute;/*чтобы не раст€гивать стрелку*/
+	background-color:White;
+	padding:10px;
+	z-index:1;
+	left:-220px;
+	top:-10px;
+	width:200px;	
+}

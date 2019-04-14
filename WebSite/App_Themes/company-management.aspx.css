@@ -1,0 +1,18 @@
+.general
+{
+	width:380px;	
+}
+.companies-container
+{
+	position:absolute;
+	top:-100px;
+	height:100px;
+	width:380px;
+	overflow:scroll;
+	overflow:hidden;
+	overflow-y:auto;	
+}
+.companies li
+{
+	list-style-type:none;
+}

@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6000BED1-3559-4389-98D1-BED397BD7C34}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TrackIt.Model</RootNamespace>
+    <AssemblyName>Model</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Site|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Site\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Desktop|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Desktop\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Container.cs" />
+    <Compile Include="ContainerOwnerRelation.cs" />
+    <Compile Include="ContainerType.cs" />
+    <Compile Include="CompanyProperty.cs" />
+    <Compile Include="CompanyPropertyType.cs" />
+    <Compile Include="ConnectionData.cs" />
+    <Compile Include="activableObject.cs" />
+    <Compile Include="FirmwareView.cs" />
+    <Compile Include="Firmware.cs" />
+    <Compile Include="laObject.cs" />
+    <Compile Include="TiimeInterval.cs" />
+    <Compile Include="TiimeAccuracy.cs" />
+    <Compile Include="StateManager.cs" />
+    <Compile Include="TaskStatus.cs" />
+    <Compile Include="DeviceTask.cs" />
+    <Compile Include="TemperatureDataView.cs" />
+    <Compile Include="DeviceView.cs" />
+    <Compile Include="EventTypeView.cs" />
+    <Compile Include="EventView.cs" />
+    <Compile Include="Country.cs" />
+    <Compile Include="Vs\TrackVsDevice.cs" />
+    <Compile Include="WebFileLight.cs" />
+    <Compile Include="WebFile.cs" />
+    <Compile Include="Device.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContainerMove.cs" />
+    <Compile Include="FormatDistance.cs" />
+    <Compile Include="IDevice.cs" />
+    <Compile Include="Sensor.cs" />
+    <Compile Include="DeviceData.cs" />
+    <Compile Include="TrackStatus.cs" />
+    <Compile Include="TimeZone.cs" />
+    <Compile Include="TrackDate.cs" />
+    <Compile Include="TrackView.cs" />
+    <Compile Include="ITrackContainer.cs" />
+    <Compile Include="IUser.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Trailer.cs" />
+    <Compile Include="Vs\IUserVsIUser.cs" />
+    <Compile Include="Vs\LocationVsIUser.cs" />
+    <Compile Include="WebAction.cs" />
+    <Compile Include="Change.cs" />
+    <Compile Include="ObjectType.cs" />
+    <Compile Include="NotificationRule.cs" />
+    <Compile Include="EventType.cs" />
+    <Compile Include="Event.cs" />
+    <Compile Include="FormatTime.cs" />
+    <Compile Include="FormatTemperature.cs" />
+    <Compile Include="TrackControlTemperature.cs" />
+    <Compile Include="ITrackControl.cs" />
+    <Compile Include="TrackControlCheckPoint.cs" />
+    <Compile Include="GPSPoint.cs" />
+    <Compile Include="Track.cs" />
+    <Compile Include="Culture.cs" />
+    <Compile Include="CommonContent.cs" />
+    <Compile Include="Empty.cs" />
+    <Compile Include="FormatDate.cs" />
+    <Compile Include="IModelObject.cs" />
+    <Compile Include="ICoordinate.cs" />
+    <Compile Include="localizableObject.cs" />
+    <Compile Include="MenuItem.cs" />
+    <Compile Include="modelObject.cs" />
+    <Compile Include="Test.cs" />
+    <Compile Include="ModemState.cs" />
+    <Compile Include="Monitoring.cs" />
+    <Compile Include="nt_types.cs" />
+    <Compile Include="IOwned.cs" />
+    <Compile Include="Location.cs" />
+    <Compile Include="Company.cs" />
+    <Compile Include="DeviceType.cs" />
+    <Compile Include="WebUser.cs" />
+    <Compile Include="Gateway.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vs\UserVsCompany.cs" />
+    <Compile Include="WebUIContent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DeviceMove.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
