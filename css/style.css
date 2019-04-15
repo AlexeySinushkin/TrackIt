@@ -131,6 +131,9 @@ a:hover{
     min-height: 400px;
     border-top: white 2px solid;
     padding-top:1rem;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-image: url(/images/green2_top.jpg);
 }
 .main-right{
     
