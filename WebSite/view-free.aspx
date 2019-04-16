@@ -161,6 +161,6 @@ IMEI/SN: <%=device.SerialAsString %><br />
             }
     </script>
     <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4Q3lfdSZqqanTMcY6s_7LMFyZMxmy51U&callback=initMap">
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUuI4OUZJV8NvcF2psvRG3VBqgWS1HsIc&callback=initMap">
     </script>
 </asp:Content>
