@@ -6,7 +6,6 @@ using System.Web;
 using System.Web.Services;
 using TrackIt.Model;
 using TrackIt.Website.Model;
-using TrackIt.Website.Model;
 using Website.Common;
 using WebSite.Common;
 
@@ -32,7 +31,7 @@ namespace TrackIt.Website
         /// </summary>
         /// <returns>RESULT-REJECT RESULT-OK RESULT-ERROR</returns>
         [WebMethod]
-        public string AddData(string IMEI, string _Timestamp, 
+        public string AddData(string IMEI, string Timestamp, 
             string Latitude, string Longitude, string Accuracy)
         {
             try
@@ -44,7 +43,7 @@ namespace TrackIt.Website
                 }
 
                 
-                DateTime sampleDate = Timestamp.GetDate(UInt32.Parse(_Timestamp));
+                DateTime sampleDate =  TimestampUtils.GetDate(UInt32.Parse(Timestamp));
                 
                 if (sampleDate.AddDays(3) < DateTime.UtcNow)
                 {
@@ -80,7 +79,7 @@ namespace TrackIt.Website
             {
                 Ex.Add(ex);
                 Ex.log.ErrorFormat("On request with params {0} {1} {2} {3} {4} ", 
-                    IMEI, _Timestamp, Latitude, Longitude, Accuracy);
+                    IMEI, Timestamp, Latitude, Longitude, Accuracy);
             }
             return "RESULT-ERROR";
         }

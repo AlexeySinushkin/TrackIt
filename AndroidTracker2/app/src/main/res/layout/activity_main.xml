@@ -22,4 +22,104 @@
         app:headerLayout="@layout/nav_header_main"
         app:menu="@menu/activity_main_drawer" />
 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="IMEI/SN:"
+            android:id="@+id/textViewIMEIText"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewIMEI"
+            android:layout_toRightOf="@id/textViewIMEIText"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="012345678912345"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewGPSText"
+            android:layout_below="@id/textViewIMEIText"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/lastGPSInfo" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewGPS"
+            android:layout_toRightOf="@id/textViewGPSText"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/unknown"
+            android:layout_below="@id/textViewIMEIText"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewLastConnectionText"
+            android:layout_below="@id/textViewGPSText"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/lastServerConnection" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewLastConnection"
+            android:layout_toRightOf="@id/textViewLastConnectionText"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/unknown"
+            android:layout_below="@id/textViewGPSText"
+            android:layout_marginLeft="10dp"/>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/debugView"
+            android:background="#EEEEEE"
+            android:layout_below="@+id/textViewLastConnectionText"
+            >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/debugText"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/gpsTableScroll"
+            android:layout_below="@id/debugView"
+            android:layout_marginBottom="30dp"
+            >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:minHeight="100dp"
+                android:id="@+id/gpsTable"
+                >
+
+
+
+
+            </TableLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+
+
 </android.support.v4.widget.DrawerLayout>

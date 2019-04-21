@@ -328,7 +328,7 @@ namespace TrackIt.Website
                           select
                               new gpsJson
                               {
-                                  ts = Timestamp.GetTimestamp(p.SampleDate).ToString(),
+                                  ts = TimestampUtils.GetTimestamp(p.SampleDate).ToString(),
                                   sd = p.SampleDate.ToString(),
                                   ActionOrState = p.ActionOrState,
                                   Latitude = p.Latitude,

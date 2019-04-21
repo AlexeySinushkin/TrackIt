@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WebSite.Common
 {
-    public class Timestamp
+    public class TimestampUtils
     {
         public static DateTime GetDate(byte[] buf, int offset)
         {
