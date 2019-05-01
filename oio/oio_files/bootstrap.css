@@ -4524,7 +4524,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-inverse {
   background-color: #e2ffff;
-  background: url(/Content/top.jpg);
+  background: url(/oio_files/top.jpg);
   background-repeat:no-repeat;
   margin-right:auto;
   margin-left:auto;
@@ -4533,7 +4533,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 .start-page-image
 {
-    background:url(/Content/top.jpg);
+    background:url(/oio_files/top.jpg);
     background-repeat:no-repeat;
     margin-right:auto;
     margin-left:auto;
