@@ -1,0 +1,178 @@
+body{
+    min-width: 320px;
+    font-size: 14px;
+    font-family: tahoma, arial, helvetica, sans-serif;
+    color:#43595F;
+}
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+img{
+    max-width: 100%;
+    height: auto;
+}
+a{
+    color:#43595F;
+    text-decoration: underline;
+}
+p{
+    text-indent: 1rem;
+    margin: 4px auto;
+}
+a:hover{
+    color:#43595F;
+    text-decoration: none;
+}
+
+.dark-style{
+    color:#FFFFFF;
+    background-color: #43595F;
+}
+
+.dark-style a{
+    
+    color:#FEA355;
+    text-decoration-style: underline;
+}
+.dark-style a:hover{
+    color:#FEA355;
+    text-decoration-style: none;
+}
+.input-imei{
+    width:160px;
+}
+
+
+
+@media (min-width: 992px)  {
+    header{
+        background-image:url(/images/rez_top.jpg); 
+        background-repeat:repeat-x; 
+        height:77px; 
+        background-position:right top;
+    }
+
+    .nav-item{
+        background-image:url(/images/m.jpg);
+        background-repeat:no-repeat;
+        background-position: left -7px;
+        height:71px;    
+    }
+    .nav-link{
+        margin-left: 10px;
+        margin-right: 10px;
+        text-transform: uppercase;
+    }
+}
+
+
+
+.btn-outline-primary, 
+.btn-outline-primary:hover, 
+.btn-outline-primary:active, 
+.btn-outline-primary:visited {
+    color: #43595F !important;
+    border-color: #43595F !important;
+}
+.btn-outline-primary:hover{
+    color: white !important;
+    border-color: white!important;
+    background-color: #FC7500 !important;
+}
+
+
+
+.truck{
+    min-height: 282px;
+    background-color: white;
+}
+.truck-main{
+    background-image:url(/images/big_foto.jpg); 
+    background-repeat: no-repeat;
+    background-position: right top;
+    min-width:320px;
+    width:766px;
+}
+.truck-left{
+    background-image:url(/images/rez_top1.jpg); 
+    background-repeat: repeat-x;
+    background-position: left top;
+    display:none;
+}
+
+.truck-right{
+    background-image:url(/images/rez_top2.jpg); 
+    background-repeat: repeat-x;
+    background-position: left top;
+    display:none;
+}
+
+
+@media (min-width: 768px)  {
+    .truck-left{
+        display:block;
+    }
+    .truck-right{
+        display:block;
+    }
+    .truck-main{
+        min-width:766px;
+    }
+}
+
+.main-content{
+    min-height: 400px;
+}
+
+.main-left{
+    z-index: 1;
+    top:-71px;
+    min-height: 400px;
+    border-top: white 2px solid;
+    padding-top:1rem;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-image: url(/images/green2_top.jpg);
+}
+.main-right{
+    
+}
+.shadow-width{
+    width: 12px;
+    max-width: 12px;    
+    padding: 0 0;
+    display:none;
+}
+
+.main-shadow{
+    z-index: 1;
+    top:-71px;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-image: url(/images/ch_center.jpg);
+    min-height: 324px;   
+}
+
+@media (min-width: 600px)  {
+    .shadow-width{
+        display:block;
+    }
+}
+
+
+footer .row{
+    height:50px;
+    min-height: 50px;
+}
+footer .col{
+    text-align: center;
+}
+
+footer .footer-left{
+    border-top: solid 1px white;
+}
+footer .footer-right{
+    border-top: solid 1px #43595F;
+}
+
